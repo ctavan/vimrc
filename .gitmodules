@@ -4,3 +4,6 @@
 [submodule "pack/submodules/start/nerdtree"]
 	path = pack/submodules/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
+[submodule "pack/submodules/start/javascript"]
+	path = pack/submodules/start/javascript
+	url = https://github.com/pangloss/vim-javascript.git
