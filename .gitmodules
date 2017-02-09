@@ -19,3 +19,6 @@
 [submodule "pack/submodules/start/YouCompleteMe"]
 	path = pack/submodules/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "pack/submodules/start/fzf"]
+	path = pack/submodules/start/fzf
+	url = https://github.com/junegunn/fzf.vim.git
