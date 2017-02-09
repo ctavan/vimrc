@@ -8,3 +8,6 @@ set guifont=Source\ Code\ Pro\ for\ Powerline:h13 " guifont + fontsize
 
 " nerdtree
 nmap <leader>w :NERDTreeToggle<CR>
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger = '<S-CR>'
