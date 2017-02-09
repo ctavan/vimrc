@@ -7,3 +7,6 @@
 [submodule "pack/submodules/start/javascript"]
 	path = pack/submodules/start/javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule "pack/submodules/start/surround"]
+	path = pack/submodules/start/surround
+	url = https://github.com/tpope/vim-surround.git
