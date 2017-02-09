@@ -35,3 +35,25 @@ let g:UltiSnipsListSnippets="<c-e>"
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 " End stackoverflow
 let g:UltiSnipsExpandTrigger = '<S-CR>'
+
+
+" Tab-Styles
+set ts=4 sts=4 sw=4 expandtab
+autocmd FileType php setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType go setlocal ts=4 sts=4 sw=4 noexpandtab
+autocmd FileType perl setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType less setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
+autocmd FileType sql setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType python setlocal ts=4 softtabstop=4 shiftwidth=4 expandtab
+autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
+
+" virtual tabstops using spaces
+let my_tab=2
+execute "set shiftwidth=".my_tab
+execute "set softtabstop=".my_tab
+set expandtab
