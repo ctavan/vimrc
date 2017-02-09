@@ -1,0 +1,17 @@
+snippet c "console.log()" !b
+console.log(${0:message});
+endsnippet
+
+snippet ce "console.error()" !b
+console.error(${0:message});
+endsnippet
+
+snippet r "const X = require('X')" b
+const $1 = require('${1:util}')${0:};
+endsnippet
+
+snippet i "import X from 'X'" b
+import ${0:}`!p snip.rv=re.findall('[^/]*$', t[1])[0]` from '${1:util}';
+endsnippet
+
+# vim:ft=snippets:
