@@ -1,3 +1,6 @@
 [submodule "pack/submodules/start/peaksea"]
 	path = pack/submodules/start/peaksea
 	url = https://github.com/vim-scripts/peaksea.git
+[submodule "pack/submodules/start/nerdtree"]
+	path = pack/submodules/start/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
