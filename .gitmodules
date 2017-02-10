@@ -28,3 +28,6 @@
 [submodule "pack/submodules/start/lightline"]
 	path = pack/submodules/opt/lightline
 	url = https://github.com/itchyny/lightline.vim.git
+[submodule "pack/submodules/start/delimitMate"]
+	path = pack/submodules/start/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
