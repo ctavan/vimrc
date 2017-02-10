@@ -215,6 +215,17 @@ endif
 
 
 " fzf
-" see https://github.com/junegunn/fzf/wiki/On-MacVim-with-iTerm2
-let g:fzf_launcher = 'in-new-term-function %s'
-set rtp+=/usr/local/opt/fzf
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>F :Files <C-r>=Expand_file_directory()<CR><CR>
+nnoremap <leader>g :GitFiles<CR>
+nnoremap <leader>c :BCommits<CR>
+nnoremap <leader>C :Commits<CR>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>w :Windows<CR>
+nnoremap <leader>l :BLines<CR>
+nnoremap <leader>L :Lines<CR>
+nnoremap <leader>? :Helptags<CR>
+nnoremap <leader>: :Commands<CR>
+nnoremap <leader>; :Commands<CR>
+nnoremap <leader>h :History:<CR>
+nnoremap <leader>/ :History/<CR>
