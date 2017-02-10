@@ -1,10 +1,11 @@
 #!/bin/bash -eu
 
-ln -sf `pwd`/bin/in-new-term-function /usr/local/bin/in-new-term-function
-
-brew update
-brew reinstall fzf
-brew upgrade --HEAD fzf
-/usr/local/opt/fzf/install
-
+# submodules
+git submodule sync
 git submodule update --init --recursive
+
+# fzf
+ln -sf `pwd`/bin/in-new-term-function /usr/local/bin/in-new-term-function
+brew update
+brew install --HEAD fzf
+/usr/local/opt/fzf/install --all
