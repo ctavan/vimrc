@@ -55,7 +55,6 @@ set showmatch                  " highlight mathing brackets
 set nohlsearch                 " don't highlight search results by default as I'm using them to navigate around
 set nowrap                     " don't wrap long lines by default
 set mouse=a                    " Enable the use of a mouse
-set nocursorline                " Don't show cursorline
 set noerrorbells               " disable error bells
 set novisualbell               " disable beep
 set wildmode=list:longest,full   " Don't start wildmenu immediately but list the alternatives first and then do the completion if the user requests it by pressing wildkey repeatedly
@@ -94,7 +93,6 @@ set cpoptions=aABceFsqJ        " q: When joining multiple lines leave the cursor
 " Text Settings:
 " --------------
 
-set clipboard-=autoselect    " disable itegration with X11 clipboard
 set virtualedit=block        " allow the cursor to move beyond the last character of a line
 set copyindent               " always copy indentation level from previous line
 set nocindent                " disable cindent - it doesn't go well with formatoptions
@@ -113,14 +111,22 @@ set complete+=i              " scan included files and dictionary (if spell chec
 
 " CHRISTOPHS SETTINGS
 
-set cursorline
+" Share clipboards
+set clipboard=unnamed
+
 set number
 set norelativenumber
 set smartindent
 
+set wildmenu
+
+set noautochdir
+
+set incsearch
+set hlsearch
+
 " Appearence
 set background=dark
-colorscheme peaksea
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13 " guifont + fontsize
 
 " nerdtree
