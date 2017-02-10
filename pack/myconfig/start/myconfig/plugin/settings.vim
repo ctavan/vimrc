@@ -231,5 +231,13 @@ nnoremap <leader>; :Commands<CR>
 nnoremap <leader>h :History:<CR>
 nnoremap <leader>/ :History/<CR>
 
+" Quickfix
+nnoremap <C-Down> :cnext<CR>
+nnoremap <C-Up> :cprev<CR>
+
+" Arrows for next buffer the arrows to something usefull
+nnoremap <right> :bn<CR>
+nnoremap <left> :bp<CR>
+
 " Must appear here again for javascript/jsx indentation to work
 filetype plugin indent on
