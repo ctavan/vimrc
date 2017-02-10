@@ -25,7 +25,7 @@ set ignorecase                 " ignore case by default for search patterns
 set magic                      " special characters that can be used in search patterns
 set hidden                     " allow hidden buffers with modifications
 set whichwrap=<,>              " Cursor key move the cursor to the next/previous line if pressed at the end/beginning of a line
-set backspace=indent,eol,start " more powerful backspacing
+"set backspace=indent,eol,start " more powerful backspacing
 set grepprg=rg\ --vimgrep      " use ripgrep
 
 " Suffixes that get lower priority when doing tab completion for filenames.
@@ -64,10 +64,10 @@ set wildcharm=<C-Z>            " Shortcut to open the wildmenu when you are in t
 set guifont=Hack\ 8            " guifont + fontsize
 set guicursor=a:blinkon0       " cursor-blinking off!!
 set nofoldenable               " start editing with all folds open
-set foldmethod=indent          " Use indent for folding by default
+"set foldmethod=indent          " Use indent for folding by default
 "set foldminlines=0             " number of lines above which a fold can be displayed
 set linebreak                  " If on Vim will wrap long lines at a character in 'breakat'
-set breakindent                " indent wrapped lines visually
+"set breakindent                " indent wrapped lines visually
 set showtabline=2              " always show tabline, even if there is just one tab, avoid redraw problems when Window is displayed in fullscreen mode
 "set foldcolumn=1               " show folds
 set colorcolumn=+1             " color specified column in order to help respecting line widths
@@ -94,8 +94,8 @@ set cpoptions=aABceFsqJ        " q: When joining multiple lines leave the cursor
 " --------------
 
 set virtualedit=block        " allow the cursor to move beyond the last character of a line
-set copyindent               " always copy indentation level from previous line
-set nocindent                " disable cindent - it doesn't go well with formatoptions
+"set copyindent               " always copy indentation level from previous line
+"set nocindent                " disable cindent - it doesn't go well with formatoptions
 set textwidth=80             " default textwidth
 set shiftwidth=2             " number of spaces to use for each step of indent
 set tabstop=2                " number of spaces a tab counts for
@@ -124,8 +124,6 @@ set noautochdir
 
 set incsearch
 set hlsearch
-
-filetype plugin indent on
 
 " Appearence
 set background=dark
