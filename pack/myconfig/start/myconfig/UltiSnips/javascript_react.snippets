@@ -175,7 +175,7 @@ const `!v expand('%:t:r')` = (${1:props}) => {
 export default `!v expand('%:t:r')`;
 endsnippet
 
-snippet rpe "React pure export" b
+snippet rpr "React pure export" b
 import React from 'react';
 
 const `!v expand('%:t:r')` = (${1:props}) => {
@@ -184,6 +184,16 @@ const `!v expand('%:t:r')` = (${1:props}) => {
     </div>
   );
 };
+export default `!v expand('%:t:r')`;
+endsnippet
+
+snippet rp "React pure export direct return" b
+import React from 'react';
+
+const `!v expand('%:t:r')` = (${1:props}) => (
+  <div${2}>
+  </div>
+);
 export default `!v expand('%:t:r')`;
 endsnippet
 
