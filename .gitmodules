@@ -22,3 +22,6 @@
 [submodule "pack/submodules/start/fzf"]
 	path = pack/submodules/start/fzf
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/submodules/start/Colorizer"]
+	path = pack/submodules/start/Colorizer
+	url = https://github.com/chrisbra/Colorizer.git

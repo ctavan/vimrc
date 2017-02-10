@@ -179,3 +179,8 @@ autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
 let my_tab=2
 execute "set shiftwidth=".my_tab
 execute "set softtabstop=".my_tab
+
+
+" Colorizer
+let g:colorizer_auto_filetype='css,html'
+let g:colorizer_auto_map = 1
