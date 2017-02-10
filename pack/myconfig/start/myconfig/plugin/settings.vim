@@ -221,7 +221,7 @@ nnoremap <leader>g :GitFiles<CR>
 nnoremap <leader>c :BCommits<CR>
 nnoremap <leader>C :Commits<CR>
 nnoremap <leader>b :Buffers<CR>
-nnoremap <leader>w :Windows<CR>
+nnoremap <leader>W :Windows<CR>
 nnoremap <leader>l :BLines<CR>
 nnoremap <leader>L :Lines<CR>
 nnoremap <leader>? :Helptags<CR>
