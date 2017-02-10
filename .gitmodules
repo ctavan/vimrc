@@ -31,3 +31,6 @@
 [submodule "pack/submodules/start/delimitMate"]
 	path = pack/submodules/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
+[submodule "pack/submodules/start/polyglot"]
+	path = pack/submodules/start/polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
