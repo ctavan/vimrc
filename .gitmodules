@@ -34,6 +34,3 @@
 [submodule "pack/submodules/start/neomake"]
 	path = pack/submodules/start/neomake
 	url = https://github.com/neomake/neomake.git
-[submodule "pack/submodules/start/jsx-improved"]
-	path = pack/submodules/start/jsx-improved
-	url = https://github.com/neoclide/vim-jsx-improve.git
