@@ -1,0 +1,3 @@
+#!/bin/bash -eu
+
+ln -sf `pwd`/bin/in-new-term-function /usr/local/bin/in-new-term-function
