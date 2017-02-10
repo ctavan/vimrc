@@ -125,6 +125,8 @@ set noautochdir
 set incsearch
 set hlsearch
 
+filetype plugin indent on
+
 " Appearence
 set background=dark
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13 " guifont + fontsize
