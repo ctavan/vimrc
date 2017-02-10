@@ -37,3 +37,6 @@
 [submodule "pack/submodules/start/jsx-pretty"]
 	path = pack/submodules/start/jsx-pretty
 	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule "pack/submodules/start/javascript"]
+	path = pack/submodules/start/javascript
+	url = https://github.com/pangloss/vim-javascript.git
