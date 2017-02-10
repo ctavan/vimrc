@@ -184,3 +184,17 @@ execute "set softtabstop=".my_tab
 " Colorizer
 let g:colorizer_auto_filetype='css,html'
 let g:colorizer_auto_map = 1
+
+" Lightline
+if !has('gui_running')
+  set t_Co=256
+endif
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ 'component': {
+      \   'readonly': '%{&readonly?"":""}',
+      \ },
+      \ 'separator': { 'left': '', 'right': '' },
+      \ 'subseparator': { 'left': '', 'right': '' }
+      \ }

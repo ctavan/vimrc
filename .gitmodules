@@ -25,3 +25,6 @@
 [submodule "pack/submodules/start/Colorizer"]
 	path = pack/submodules/start/Colorizer
 	url = https://github.com/chrisbra/Colorizer.git
+[submodule "pack/submodules/start/lightline"]
+	path = pack/submodules/opt/lightline
+	url = https://github.com/itchyny/lightline.vim.git
