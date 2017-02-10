@@ -7,9 +7,6 @@ function! s:init()
     " load status line
     packadd lightline
 
-    " set color scheme
-    colorscheme peaksea
-
     " personal vim settings
     packadd myconfig_post
 endfunction

@@ -4,5 +4,6 @@
 set cursorline
 hi CursorLine guifg=NONE guibg=#303030 gui=NONE
 
-syntax on
-filetype plugin indent on
+" You MUST NOT set colorscheme here as this may break certain indetnation
+" plugins (like javascript/jsx). Instead this must be set in the _pre config.
+"colorscheme peaksea

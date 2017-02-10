@@ -230,3 +230,6 @@ nnoremap <leader>: :Commands<CR>
 nnoremap <leader>; :Commands<CR>
 nnoremap <leader>h :History:<CR>
 nnoremap <leader>/ :History/<CR>
+
+" Must appear here again for javascript/jsx indentation to work
+filetype plugin indent on
