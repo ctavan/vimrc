@@ -29,14 +29,14 @@
 	path = pack/submodules/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
 [submodule "pack/submodules/start/polyglot"]
-	path = pack/submodules/opt/polyglot
+	path = pack/submodules/start/polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "pack/submodules/start/neomake"]
 	path = pack/submodules/start/neomake
 	url = https://github.com/neomake/neomake.git
 [submodule "pack/submodules/start/javascript"]
-	path = pack/submodules/start/javascript
+	path = pack/submodules/opt/javascript
 	url = https://github.com/pangloss/vim-javascript.git
 [submodule "pack/submodules/start/jsx"]
-	path = pack/submodules/start/jsx
+	path = pack/submodules/opt/jsx
 	url = https://github.com/mxw/vim-jsx.git
