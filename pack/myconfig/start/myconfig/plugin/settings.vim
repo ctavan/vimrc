@@ -200,6 +200,13 @@ let g:lightline = {
       \ }
 
 
+" delimitMate config
+"https://github.com/Raimondi/delimitMate/issues/53
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+imap <expr><CR> pumvisible() ? "\<C-n>" : "<Plug>delimitMateCR"
+
+
 " Remember cursor position
 " http://askubuntu.com/a/202077
 if has("autocmd")
