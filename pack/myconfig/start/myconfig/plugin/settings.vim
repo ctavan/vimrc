@@ -212,3 +212,9 @@ imap <expr><CR> pumvisible() ? "\<C-n>" : "<Plug>delimitMateCR"
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+
+" fzf
+" see https://github.com/junegunn/fzf/wiki/On-MacVim-with-iTerm2
+let g:fzf_launcher = 'in-new-term-function %s'
+set rtp+=/usr/local/opt/fzf
