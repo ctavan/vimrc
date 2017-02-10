@@ -232,8 +232,8 @@ nnoremap <leader>h :History:<CR>
 nnoremap <leader>/ :History/<CR>
 
 " Quickfix
-nnoremap <C-Down> :cnext<CR>
-nnoremap <C-Up> :cprev<CR>
+nnoremap <down> :cnext<CR>
+nnoremap <up> :cprev<CR>
 
 " Arrows for next buffer the arrows to something usefull
 nnoremap <right> :bn<CR>
