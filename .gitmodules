@@ -29,7 +29,7 @@
 	path = pack/submodules/start/delimitMate
 	url = https://github.com/Raimondi/delimitMate.git
 [submodule "pack/submodules/start/polyglot"]
-	path = pack/submodules/start/polyglot
+	path = pack/submodules/opt/polyglot
 	url = https://github.com/sheerun/vim-polyglot.git
 [submodule "pack/submodules/start/neomake"]
 	path = pack/submodules/start/neomake
