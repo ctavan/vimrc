@@ -61,8 +61,6 @@ set wildmode=list:longest,full   " Don't start wildmenu immediately but list the
 set wildignore-=tmp
 set wildignore+=*.DS_STORE,*~,*.o,*.obj,*.pyc,.git,.svn,.hg
 set wildcharm=<C-Z>            " Shortcut to open the wildmenu when you are in the command mode - it's similar to <C-D>
-set guifont=Hack\ 8            " guifont + fontsize
-set guicursor=a:blinkon0       " cursor-blinking off!!
 set nofoldenable               " start editing with all folds open
 "set foldmethod=indent          " Use indent for folding by default
 "set foldminlines=0             " number of lines above which a fold can be displayed
@@ -128,6 +126,7 @@ set hlsearch
 " Appearence
 set background=dark
 set guifont=Source\ Code\ Pro\ for\ Powerline:h13 " guifont + fontsize
+set guicursor=a:blinkon0       " cursor-blinking off!!
 
 " nerdtree
 nmap <leader>w :NERDTreeToggle<CR>
