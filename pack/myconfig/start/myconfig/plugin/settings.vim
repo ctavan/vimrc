@@ -238,5 +238,8 @@ nnoremap <up> :cprev<CR>
 nnoremap <right> :bn<CR>
 nnoremap <left> :bp<CR>
 
+" strip trailing whitespaces
+:nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
+
 " Must appear here again for javascript/jsx indentation to work
 filetype plugin indent on
