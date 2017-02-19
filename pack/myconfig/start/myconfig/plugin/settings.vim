@@ -186,9 +186,9 @@ let g:colorizer_auto_filetype='css,html'
 let g:colorizer_auto_map = 1
 
 " Lightline
-if !has('gui_running')
-  set t_Co=256
-endif
+" if !has('gui_running')
+"   set t_Co=256
+" endif
 set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -240,6 +240,3 @@ nnoremap <left> :bp<CR>
 
 " strip trailing whitespaces
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
-
-" Must appear here again for javascript/jsx indentation to work
-filetype plugin indent on
