@@ -1,14 +1,14 @@
-set encoding=utf-8 " use UTF-8 encoding
+set encoding=utf-8
 
 " plugin configuration
 packadd myconfig_pre
 
 function! s:init()
-    " load status line
-    packadd lightline
-
     " personal vim settings
     packadd myconfig_post
+
+    " load status line
+    packadd lightline
 endfunction
 
 au VimEnter * call s:init()
