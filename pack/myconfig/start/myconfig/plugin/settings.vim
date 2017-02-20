@@ -241,6 +241,10 @@ nnoremap <left> :bp<CR>
 " strip trailing whitespaces
 :nnoremap <silent> <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar>:nohl<CR>
 
+" Insert-mode cursor for neovim
+" https://github.com/neovim/neovim/wiki/FAQ#how-can-i-change-the-cursor-shape-in-the-terminal
+:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+
 " Handle files that changed on disk in neovim
 " https://github.com/neovim/neovim/issues/2127#issuecomment-150954047
 augroup AutoSwap
