@@ -60,6 +60,7 @@ set novisualbell               " disable beep
 set wildmode=list:longest,full   " Don't start wildmenu immediately but list the alternatives first and then do the completion if the user requests it by pressing wildkey repeatedly
 set wildignore-=tmp
 set wildignore+=*.DS_STORE,*~,*.o,*.obj,*.pyc,.git,.svn,.hg
+set wildignorecase
 set wildcharm=<C-Z>            " Shortcut to open the wildmenu when you are in the command mode - it's similar to <C-D>
 set nofoldenable               " start editing with all folds open
 "set foldmethod=indent          " Use indent for folding by default
