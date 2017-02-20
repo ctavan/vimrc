@@ -131,32 +131,37 @@ set guicursor=a:blinkon0       " cursor-blinking off!!
 " nerdtree
 nmap <leader>w :NERDTreeToggle<CR>
 
-" UltiSnips
-"http://stackoverflow.com/a/18685821/1053532
+
+" START: UltiSnips + YouCompleteMe + delimitMate
+let g:ycm_filetype_blacklist = {'unite': 1,}
+let g:UltiSnipsExpandTrigger       = "<tab>"
+let g:UltiSnipsJumpForwardTrigger  = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 function! g:UltiSnips_Complete()
-    call UltiSnips#ExpandSnippet()
-    if g:ulti_expand_res == 0
-        if pumvisible()
-            return "\<C-n>"
-        else
-            call UltiSnips#JumpForwards()
-            if g:ulti_jump_forwards_res == 0
-               return "\<TAB>"
-            endif
-        endif
+  call UltiSnips#ExpandSnippet()
+  if g:ulti_expand_res == 0
+    if pumvisible()
+      return "\<C-n>"
+    else
+      call UltiSnips#JumpForwards()
+      if g:ulti_jump_forwards_res == 0
+        return "\<TAB>"
+      endif
     endif
-    return ""
+  endif
+  return ""
 endfunction
 
-au BufEnter * exec "inoremap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-e>"
-" this mapping Enter key to <C-y> to chose the current highlight item 
-" and close the selection list, same as other IDEs.
-" CONFLICT with some plugins like tpope/Endwise
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-" End stackoverflow
-let g:UltiSnipsExpandTrigger = '<S-CR>'
+au InsertEnter * exec "imap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
+
+" delimitMate config
+"https://github.com/Raimondi/delimitMate/issues/53
+let g:delimitMate_expand_cr = 1
+let g:delimitMate_expand_space = 1
+imap <expr><CR> pumvisible() ? "\<C-n>" : "<Plug>delimitMateCR"
+
+" END: UltiSnips + YouCompleteMe + delimitMate
 
 
 " Tab-Styles
@@ -198,13 +203,6 @@ let g:lightline = {
       \ 'separator': { 'left': '', 'right': '' },
       \ 'subseparator': { 'left': '', 'right': '' }
       \ }
-
-
-" delimitMate config
-"https://github.com/Raimondi/delimitMate/issues/53
-let g:delimitMate_expand_cr = 1
-let g:delimitMate_expand_space = 1
-imap <expr><CR> pumvisible() ? "\<C-n>" : "<Plug>delimitMateCR"
 
 
 " Remember cursor position
