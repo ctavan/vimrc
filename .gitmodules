@@ -40,3 +40,6 @@
 [submodule "pack/submodules/start/jsx"]
 	path = pack/submodules/opt/jsx
 	url = https://github.com/mxw/vim-jsx.git
+[submodule "pack/submodules/start/fugitive"]
+	path = pack/submodules/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
