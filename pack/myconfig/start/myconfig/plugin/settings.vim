@@ -269,3 +269,11 @@ augroup checktime
     autocmd BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI,FocusGained,BufEnter,FocusLost,WinLeave * checktime
   endif
 augroup END
+
+
+" miniyank to work around neovim issue
+" https://github.com/neovim/neovim/issues/1822
+if !has("gui_running")
+  map p <Plug>(miniyank-autoput)
+  map P <Plug>(miniyank-autoPut)
+endif
