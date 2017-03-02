@@ -180,6 +180,7 @@ autocmd FileType python setlocal ts=4 softtabstop=4 shiftwidth=4 expandtab
 autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType nginx setlocal ts=4 sts=4 sw=4 expandtab
 
 " virtual tabstops using spaces
 let my_tab=2
