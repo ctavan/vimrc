@@ -175,6 +175,7 @@ autocmd FileType xml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType less setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType javascript setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
+autocmd FileType markdown setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
 autocmd FileType sql setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType python setlocal ts=4 softtabstop=4 shiftwidth=4 expandtab
 autocmd FileType sh setlocal ts=4 sts=4 sw=4 expandtab
