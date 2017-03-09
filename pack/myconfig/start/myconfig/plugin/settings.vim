@@ -95,7 +95,7 @@ set cpoptions=aABceFsqJ        " q: When joining multiple lines leave the cursor
 set virtualedit=block        " allow the cursor to move beyond the last character of a line
 "set copyindent               " always copy indentation level from previous line
 "set nocindent                " disable cindent - it doesn't go well with formatoptions
-set textwidth=80             " default textwidth
+set textwidth=79             " default textwidth
 set shiftwidth=2             " number of spaces to use for each step of indent
 set tabstop=2                " number of spaces a tab counts for
 set softtabstop=2            " number of spaces a tab counts for
