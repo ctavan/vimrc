@@ -279,3 +279,6 @@ if !has("gui_running")
   map p <Plug>(miniyank-autoput)
   map P <Plug>(miniyank-autoPut)
 endif
+
+" https://github.com/pangloss/vim-javascript/issues/859
+set cinoptions=(0
