@@ -230,7 +230,8 @@ nnoremap <leader>: :Commands<CR>
 nnoremap <leader>; :Commands<CR>
 nnoremap <leader>h :History:<CR>
 nnoremap <leader>/ :History/<CR>
-" use ripgrep (rg) instead of ag
+" Use ripgrep (rg) instead of ag, also make sure to configure FZF via .zshrc:
+" export FZF_DEFAULT_COMMAND="rg --hidden --files --follow --glob '!.git/*'"
 command! -bang -nargs=* Rg
   \ call fzf#vim#grep(
   \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
