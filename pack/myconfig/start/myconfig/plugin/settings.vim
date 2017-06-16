@@ -243,6 +243,10 @@ command! -bang -nargs=* Rg
 nnoremap <down> :cnext<CR>
 nnoremap <up> :cprev<CR>
 
+" Locationlist
+nnoremap <S-down> :lnext<CR>
+nnoremap <S-up> :lprev<CR>
+
 " Arrows for next buffer the arrows to something usefull
 nnoremap <right> :bn<CR>
 nnoremap <left> :bp<CR>
