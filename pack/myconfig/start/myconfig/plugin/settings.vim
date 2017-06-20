@@ -292,8 +292,5 @@ if !has("gui_running")
   map P <Plug>(miniyank-autoPut)
 endif
 
-" https://github.com/pangloss/vim-javascript/issues/859
-set cinoptions=(0
-
 " Always open neomake location list
 let g:neomake_open_list=2
