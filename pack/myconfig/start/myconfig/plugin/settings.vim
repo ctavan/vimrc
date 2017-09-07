@@ -294,3 +294,6 @@ endif
 
 " Always open neomake location list
 let g:neomake_open_list=2
+
+" Search & replace word under cursor
+map <leader>R :%s/\<<C-R><C-W>/>/
