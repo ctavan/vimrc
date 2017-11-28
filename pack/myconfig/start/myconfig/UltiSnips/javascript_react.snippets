@@ -180,8 +180,6 @@ snippet rpr "React pure export" b
 
 import React from 'react';
 
-import styles from './`!v expand('%:t:r')`.css';
-
 const `!v expand('%:t:r')` = (${1:props}) => {
   return (
     <div${2}>
@@ -195,8 +193,6 @@ snippet rp "React pure export direct return" b
 // Copyright 2017 Content Pass GmbH. All Rights Reserved.
 
 import React from 'react';
-
-import styles from './`!v expand('%:t:r')`.css';
 
 const `!v expand('%:t:r')` = (${1:props}) => (
   <div${2}>
