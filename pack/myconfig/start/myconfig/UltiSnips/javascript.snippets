@@ -1,5 +1,5 @@
 global !p
-def filename(text):
+def filenameltext):
   return os.path.splitext(os.path.basename(text))[0]
 endglobal
 
@@ -28,8 +28,13 @@ import ${0:}`!p snip.rv=filename(t[1])` from '${1:util}';
 endsnippet
 
 snippet copy "Copyright Header"
-// Copyright 2017 Content Pass GmbH. All Rights Reserved.
+// Copyright 2018 Content Pass GmbH. All Rights Reserved.
 
+${0:}
+endsnippet
+
+snippet ednl "eslint-disable"
+/* eslint-disable */
 ${0:}
 endsnippet
 
