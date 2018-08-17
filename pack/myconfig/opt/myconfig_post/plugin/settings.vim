@@ -8,5 +8,5 @@ if !has('gui_running')
 end
 
 " Customize the highlight line
-set cursorline
-hi CursorLine guifg=NONE guibg=#303030 gui=NONE
+set nocursorline
+"hi CursorLine guifg=NONE guibg=#303030 gui=NONE
