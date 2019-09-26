@@ -49,3 +49,6 @@
 [submodule "pack/submodules/start/nrun"]
 	path = pack/submodules/start/nrun
 	url = https://github.com/jaawerth/nrun.vim.git
+[submodule "pack/submodules/start/neoformat"]
+	path = pack/submodules/start/neoformat
+	url = https://github.com/sbdchd/neoformat.git
