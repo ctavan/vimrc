@@ -188,11 +188,6 @@ let my_tab=2
 execute "set shiftwidth=".my_tab
 execute "set softtabstop=".my_tab
 
-
-" Colorizer
-let g:colorizer_auto_filetype='css,html'
-let g:colorizer_auto_map = 1
-
 " Lightline
 set laststatus=2
 let g:lightline = {
