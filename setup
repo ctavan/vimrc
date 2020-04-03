@@ -1,11 +1,9 @@
 #!/bin/bash -eu
 
-# submodules
-git submodule sync
-git submodule update --init --recursive
-
 # fzf
 ln -sf `pwd`/bin/in-new-term-function /usr/local/bin/in-new-term-function
 brew update
 brew install --HEAD fzf
 /usr/local/opt/fzf/install --all
+
+echo "Open vim and run: PlugInstall"
