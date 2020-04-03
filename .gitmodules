@@ -31,9 +31,6 @@
 [submodule "pack/submodules/start/fugitive"]
 	path = pack/submodules/start/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
-[submodule "pack/submodules/start/BufOnly"]
-	path = pack/submodules/start/BufOnly
-	url = https://github.com/vim-scripts/BufOnly.vim.git
 [submodule "pack/submodules/start/nvim-miniyank"]
 	path = pack/submodules/start/nvim-miniyank
 	url = https://github.com/bfredl/nvim-miniyank.git

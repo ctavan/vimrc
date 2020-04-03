@@ -10,6 +10,7 @@ Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/peaksea'
 Plug 'chrisbra/Colorizer'
+Plug 'vim-scripts/BufOnly.vim'
 
 call plug#end()
 
