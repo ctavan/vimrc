@@ -38,14 +38,15 @@ augroup js_linting
       let b:neomake_javascript_enabled_makers = ['eslint']
       let b:neomake_jsx_enabled_makers = ['eslint']
 
-      let b:neoformat_javascript_eslint = {
-            \ 'exe': s:eslint_exe,
-            \ 'args': ['--fix-dry-run', '-c', '"' . s:eslint_config . '"', '--no-eslintrc'],
-            \ 'replace': 0,
-            \ 'stdin': 0,
-            \ 'no_append': 0
-            \ }
-      let b:neoformat_enabled_javascript = ['eslint']
+      " Currently produces empty files:
+      " let b:neoformat_javascript_eslint = {
+      "       \ 'exe': s:eslint_exe,
+      "       \ 'args': ['--fix-dry-run', '-c', '"' . s:eslint_config . '"', '--no-eslintrc'],
+      "       \ 'replace': 0,
+      "       \ 'stdin': 0,
+      "       \ 'no_append': 0
+      "       \ }
+      " let b:neoformat_enabled_javascript = ['eslint']
 
       autocmd BufEnter *.jsx\= let b:neomake_javascript_eslint_exe = s:eslint_exe
       autocmd BufEnter *.jsx\= let b:neomake_javascript_eslint_args = neomake#makers#ft#javascript#eslint()['args'] + ['-c', s:eslint_config, '--no-eslintrc']

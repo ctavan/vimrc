@@ -4,11 +4,11 @@ def filename(text):
 endglobal
 
 snippet c "console.log()" !b
-console.log(${0:message});
+console.log(${0:message}); // eslint-disable-line
 endsnippet
 
 snippet ce "console.error()" !b
-console.error(${0:message});
+console.error(${0:message}); // eslint-disable-line
 endsnippet
 
 snippet l "logger.log()" !b
@@ -28,12 +28,12 @@ import ${0:}`!p snip.rv=filename(t[1])` from '${1:util}';
 endsnippet
 
 snippet copy "Copyright Header"
-// Copyright 2018 Content Pass GmbH. All Rights Reserved.
+// Copyright 2019 Content Pass GmbH. All Rights Reserved.
 
 ${0:}
 endsnippet
 
-snippet ednl "eslint-disable"
+snippet ed "eslint-disable"
 /* eslint-disable */
 ${0:}
 endsnippet
