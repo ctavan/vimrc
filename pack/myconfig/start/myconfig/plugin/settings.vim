@@ -194,9 +194,6 @@ let g:colorizer_auto_filetype='css,html'
 let g:colorizer_auto_map = 1
 
 " Lightline
-" if !has('gui_running')
-"   set t_Co=256
-" endif
 set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
@@ -277,20 +274,16 @@ autocmd CursorHold,BufWritePost,BufReadPost,BufLeave *
 
 augroup checktime
   au!
-  if !has("gui_running")
-    "silent! necessary otherwise throws errors when using command
-    "line window.
-    autocmd BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI,FocusGained,BufEnter,FocusLost,WinLeave * checktime
-  endif
+  "silent! necessary otherwise throws errors when using command
+  "line window.
+  autocmd BufEnter,CursorHold,CursorHoldI,CursorMoved,CursorMovedI,FocusGained,BufEnter,FocusLost,WinLeave * checktime
 augroup END
 
 
 " miniyank to work around neovim issue
 " https://github.com/neovim/neovim/issues/1822
-if !has("gui_running")
-  map p <Plug>(miniyank-autoput)
-  map P <Plug>(miniyank-autoPut)
-endif
+map p <Plug>(miniyank-autoput)
+map P <Plug>(miniyank-autoPut)
 
 " Always open neomake location list
 let g:neomake_open_list=2
