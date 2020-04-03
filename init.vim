@@ -6,6 +6,7 @@ Plug '/usr/local/opt/fzf'
 Plug 'junegunn/vim-easy-align'
 Plug 'tpope/vim-surround'
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-scripts/peaksea'
 
 call plug#end()
 
