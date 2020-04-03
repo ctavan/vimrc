@@ -4,9 +4,6 @@
 [submodule "pack/submodules/start/nerdtree"]
 	path = pack/submodules/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "pack/submodules/start/surround"]
-	path = pack/submodules/start/surround
-	url = https://github.com/tpope/vim-surround.git
 [submodule "pack/submodules/start/ultisnips"]
 	path = pack/submodules/start/ultisnips
 	url = https://github.com/SirVer/ultisnips.git
