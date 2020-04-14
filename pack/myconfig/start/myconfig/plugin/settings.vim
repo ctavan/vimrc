@@ -132,38 +132,11 @@ set guicursor=a:blinkon0       " cursor-blinking off!!
 " nerdtree
 nmap <leader>w :NERDTreeToggle<CR>
 
-
-" START: UltiSnips + YouCompleteMe + delimitMate
-let g:ycm_filetype_blacklist = {'unite': 1,}
-let g:UltiSnipsExpandTrigger       = "<tab>"
-let g:UltiSnipsJumpForwardTrigger  = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
-
-function! g:UltiSnips_Complete()
-  call UltiSnips#ExpandSnippet()
-  if g:ulti_expand_res == 0
-    if pumvisible()
-      return "\<C-n>"
-    else
-      call UltiSnips#JumpForwards()
-      if g:ulti_jump_forwards_res == 0
-        return "\<TAB>"
-      endif
-    endif
-  endif
-  return ""
-endfunction
-
-au InsertEnter * exec "imap <silent> " . g:UltiSnipsExpandTrigger . " <C-R>=g:UltiSnips_Complete()<cr>"
-
 " delimitMate config
 "https://github.com/Raimondi/delimitMate/issues/53
 let g:delimitMate_expand_cr = 1
 let g:delimitMate_expand_space = 1
-imap <expr><CR> pumvisible() ? "\<C-n>" : "<Plug>delimitMateCR"
-
-" END: UltiSnips + YouCompleteMe + delimitMate
-
+"imap <expr><CR> pumvisible() ? "\<C-n>" : "<Plug>delimitMateCR"
 
 " Tab-Styles
 set ts=4 sts=4 sw=4 expandtab

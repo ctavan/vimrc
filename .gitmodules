@@ -1,12 +1,6 @@
 [submodule "pack/submodules/start/nerdtree"]
 	path = pack/submodules/start/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
-[submodule "pack/submodules/start/ultisnips"]
-	path = pack/submodules/start/ultisnips
-	url = https://github.com/SirVer/ultisnips.git
-[submodule "pack/submodules/start/snippets"]
-	path = pack/submodules/start/snippets
-	url = https://github.com/honza/vim-snippets.git
 [submodule "pack/submodules/start/fzf"]
 	path = pack/submodules/start/fzf
 	url = https://github.com/junegunn/fzf.vim.git

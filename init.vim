@@ -11,8 +11,8 @@ Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/peaksea'
 Plug 'chrisbra/Colorizer'
 Plug 'vim-scripts/BufOnly.vim'
-Plug 'neomake/neomake'
-Plug 'sbdchd/neoformat'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
 
 call plug#end()
 

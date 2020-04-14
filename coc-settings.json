@@ -1,0 +1,20 @@
+{
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "json",
+    "css",
+    "markdown"
+  ],
+  "prettier.arrowParens": "always",
+  "prettier.printWidth": 100,
+  "prettier.proseWrap": "always",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript"],
+    "typescript": ["javascript"]
+  }
+}
