@@ -25,6 +25,3 @@
 [submodule "pack/submodules/start/nvim-miniyank"]
 	path = pack/submodules/start/nvim-miniyank
 	url = https://github.com/bfredl/nvim-miniyank.git
-[submodule "pack/submodules/start/nrun"]
-	path = pack/submodules/start/nrun
-	url = https://github.com/jaawerth/nrun.vim.git

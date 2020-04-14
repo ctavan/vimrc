@@ -253,15 +253,5 @@ augroup END
 map p <Plug>(miniyank-autoput)
 map P <Plug>(miniyank-autoPut)
 
-" Always open neomake location list
-let g:neomake_open_list=2
-
 " Search & replace word under cursor
 map <leader>R :%s/\<<C-R><C-W>/>/
-
-" Run neoformat automatically on save
-autocmd BufWritePre *.js,*.jsx,*.css,*.json Neoformat
-" Shortcut for neoformat
-nnoremap <leader>a :Neoformat<CR>
-
-" let g:neoformat_verbose = 1 " only affects the verbosity of Neoformat
