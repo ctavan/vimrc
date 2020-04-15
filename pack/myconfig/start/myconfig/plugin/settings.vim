@@ -155,6 +155,7 @@ autocmd FileType sh setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType nginx setlocal ts=4 sts=4 sw=4 expandtab
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
 
 " virtual tabstops using spaces
 let my_tab=2
