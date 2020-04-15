@@ -95,7 +95,7 @@ set cpoptions=aABceFsqJ        " q: When joining multiple lines leave the cursor
 set virtualedit=block        " allow the cursor to move beyond the last character of a line
 "set copyindent               " always copy indentation level from previous line
 "set nocindent                " disable cindent - it doesn't go well with formatoptions
-set textwidth=79             " default textwidth
+set textwidth=99             " default textwidth
 set shiftwidth=2             " number of spaces to use for each step of indent
 set tabstop=2                " number of spaces a tab counts for
 set softtabstop=2            " number of spaces a tab counts for
@@ -147,15 +147,15 @@ autocmd FileType html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType xml setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType less setlocal ts=2 sts=2 sw=2 expandtab
-autocmd FileType javascript setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
-autocmd FileType markdown setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType markdown setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType sql setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType python setlocal ts=4 softtabstop=4 shiftwidth=4 expandtab
 autocmd FileType sh setlocal ts=2 sts=2 sw=2 expandtab
 autocmd FileType cpp setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType c setlocal ts=4 sts=4 sw=4 expandtab
 autocmd FileType nginx setlocal ts=4 sts=4 sw=4 expandtab
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 textwidth=99 colorcolumn=100 expandtab
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " virtual tabstops using spaces
 let my_tab=2
