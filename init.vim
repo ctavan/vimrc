@@ -13,6 +13,7 @@ Plug 'chrisbra/Colorizer'
 Plug 'vim-scripts/BufOnly.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
