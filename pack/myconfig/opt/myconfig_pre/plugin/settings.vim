@@ -14,4 +14,4 @@ let g:colorizer_auto_filetype='css,html,js,jsx'
 " disable python2
 let g:loaded_python_provider = 0
 " configure python3 path
-let g:python3_host_prog = '/usr/local/opt/python/libexec/bin/python'
+let g:python3_host_prog = '/usr/local/opt/python@3/libexec/bin/python'
