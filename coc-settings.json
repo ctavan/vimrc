@@ -1,11 +1,13 @@
 {
   "eslint.autoFixOnSave": true,
   "coc.preferences.formatOnSaveFiletypes": [
+    "html",
     "javascript",
     "javascriptreact",
     "json",
     "css",
-    "markdown"
+    "markdown",
+    "rust"
   ],
   "prettier.arrowParens": "always",
   "prettier.printWidth": 100,

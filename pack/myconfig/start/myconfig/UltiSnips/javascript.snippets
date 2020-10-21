@@ -3,19 +3,19 @@ def filename(text):
   return os.path.splitext(os.path.basename(text))[0]
 endglobal
 
-snippet c "console.log()" !b
+snippet cc "console.log()"
 console.log(${0:message}); // eslint-disable-line
 endsnippet
 
-snippet ce "console.error()" !b
+snippet ce "console.error()"
 console.error(${0:message}); // eslint-disable-line
 endsnippet
 
-snippet l "logger.log()" !b
+snippet ll "logger.log()"
 logger.log(${0:message});
 endsnippet
 
-snippet le "logger.error()" !b
+snippet le "logger.error()"
 logger.error(${0:message});
 endsnippet
 
@@ -27,8 +27,21 @@ snippet i "import X from 'X'" b
 import ${0:}`!p snip.rv=filename(t[1])` from '${1:util}';
 endsnippet
 
+snippet ii "magic import" b
+import `!p
+def formatVariableName(path):
+  parts = path.split('/')
+  module = parts[0]
+  if len(parts) > 1:
+    return parts[-1]
+  else:
+    return re.sub(r'[_\-]', '', module.title())
+snip.rv = formatVariableName(t[1])
+` from '${1}';$0
+endsnippet
+
 snippet copy "Copyright Header"
-// Copyright 2019 Content Pass GmbH. All Rights Reserved.
+// Copyright 2020 Content Pass GmbH. All Rights Reserved.
 
 ${0:}
 endsnippet
@@ -45,6 +58,16 @@ endsnippet
 
 snippet edl "eslint-disable-line"
 ${0:}// eslint-disable-line
+endsnippet
+
+snippet rc "react component"
+import React from 'react';
+
+export default function `!p snip.rv = snip.basename`() {
+  return (
+    ${1:}
+  )
+}
 endsnippet
 
 # vim:ft=snippets:
