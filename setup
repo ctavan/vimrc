@@ -6,4 +6,6 @@ brew update
 brew install --HEAD fzf
 /usr/local/opt/fzf/install --all
 
+pip install --upgrade pynvim
+
 echo "Open vim and run: PlugInstall"
