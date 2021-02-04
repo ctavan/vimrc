@@ -14,6 +14,7 @@ Plug 'vim-scripts/BufOnly.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'rust-lang/rust.vim'
+Plug 'tpope/vim-eunuch'
 
 call plug#end()
 

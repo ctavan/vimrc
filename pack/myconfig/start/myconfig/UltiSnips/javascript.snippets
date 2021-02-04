@@ -4,19 +4,23 @@ def filename(text):
 endglobal
 
 snippet cc "console.log()"
-console.log(${0:message}); // eslint-disable-line
+console.log(${0}); // eslint-disable-line
+endsnippet
+
+snippet cj "console.log(JSON.stringify(*, null, 2))"
+console.log(JSON.stringify(${0}, null, 2)); // eslint-disable-line
 endsnippet
 
 snippet ce "console.error()"
-console.error(${0:message}); // eslint-disable-line
+console.error(${0}); // eslint-disable-line
 endsnippet
 
 snippet ll "logger.log()"
-logger.log(${0:message});
+logger.log(${0});
 endsnippet
 
 snippet le "logger.error()"
-logger.error(${0:message});
+logger.error(${0});
 endsnippet
 
 snippet r "const X = require('X')" b
@@ -52,8 +56,7 @@ ${0:}
 endsnippet
 
 snippet ednl "eslint-disable-next-line"
-// eslint-disable-next-line
-${0:}
+// eslint-disable-next-line ${0:}
 endsnippet
 
 snippet edl "eslint-disable-line"
